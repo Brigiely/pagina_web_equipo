@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Exportaciones de palta · Palta Hass</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header>
+    <nav>
+      <strong>PALTA HASS · PERÚ</strong>
+      <div>
+        <a href="index.html">Presentación</a>
+        <a href="cultivo.html">El cultivo</a>
+        <a href="regiones.html">Rendimiento por región</a>
+        <a href="exportaciones.html" class="activo">Exportaciones</a>
+        <a href="riesgos.html" class="cta">Riesgos</a>
+      </div>
+    </nav>
+    <div class="hero exportaciones">
+      <h1><span>Exportaciones</span> de palta</h1>
+      <p>Evolución y destinos 2015–2025</p>
+    </div>
+  </header>
+  <main>
+    <section class="franja"><div class="cifras"><div class="cifra"><b>528</b><span>miles de t exportadas en 2025</span></div><div class="cifra"><b>+8.8 %</b><span>crecimiento anual compuesto</span></div><div class="cifra"><b>US$ 2.4</b><span>precio medio por kg</span></div></div></section>
+    <section>
+      <h2>Gráficos</h2>
+      <p class="centro">La palta peruana se vende en varios continentes. Estos gráficos muestran cuánto se exportó cada año y a qué países llegó.</p>
+      <div class="grid">
+        <article class="card"><h3>Toneladas exportadas por año</h3><canvas id="c1"></canvas></article>
+        <article class="card"><h3>Destinos de exportación</h3><canvas id="c2"></canvas></article>
+      </div>
+    </section>
+    <section>
+      <h2>Principales destinos</h2>
+      <div class="tabla"><table><thead><tr><th>Destino</th><th>Participación</th><th>Miles de t (2025)</th></tr></thead><tbody><tr><td>Países Bajos</td><td>34 %</td><td>180</td></tr><tr><td>EE. UU.</td><td>27 %</td><td>143</td></tr><tr><td>España</td><td>18 %</td><td>95</td></tr><tr><td>Reino Unido</td><td>11 %</td><td>58</td></tr><tr><td>Chile</td><td>10 %</td><td>53</td></tr></tbody></table></div>
+    </section>
+    <section>
+      <h2>Lectura de los resultados</h2>
+      <p class="centro">Entre 2015 y 2025 las exportaciones pasaron de <strong>198</strong> a <strong>528</strong> miles de toneladas, un aumento de <strong>167 %</strong>. Solo hubo retrocesos en 2017 y 2023, años de El Niño costero. Dos destinos, <strong>Países Bajos y EE. UU.</strong>, concentran el 61 % del volumen: una ventaja por su demanda, pero también una dependencia que conviene reducir abriendo nuevos mercados.</p>
+    </section>
+  </main>
+  <footer><p>Estudio con datos <strong>simulados</strong> con fines didácticos · Ana y Luis · Taller “De cero a tu primera página web”</p></footer>
+  <script src="js/chart.umd.js"></script>
+  <script src="script.js"></script>
+</body>
+</html>

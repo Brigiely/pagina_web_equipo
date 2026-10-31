@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>El cultivo de la palta · Palta Hass</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header>
+    <nav>
+      <strong>PALTA HASS · PERÚ</strong>
+      <div>
+        <a href="index.html">Presentación</a>
+        <a href="cultivo.html" class="activo">El cultivo</a>
+        <a href="regiones.html">Rendimiento por región</a>
+        <a href="exportaciones.html">Exportaciones</a>
+        <a href="riesgos.html" class="cta">Riesgos</a>
+      </div>
+    </nav>
+    <div class="hero cultivo">
+      <h1>El <span>cultivo</span> de la palta</h1>
+      <p>Qué es, dónde crece y cuándo se cosecha</p>
+    </div>
+  </header>
+  <main>
+    <section>
+      <h2>¿Qué es la palta Hass?</h2>
+      <p class="centro">La palta Hass es una variedad de piel rugosa que se oscurece al madurar. Su pulpa cremosa, su sabor y su buena conservación durante el transporte la convirtieron en la preferida de los mercados internacionales.</p>
+      <p class="centro">El Perú es uno de los principales exportadores del mundo. Su cultivo genera empleo en el campo, en las plantas de empaque y en la logística, y se extiende por la costa y por algunos valles andinos.</p>
+    </section>
+    <section>
+      <h2>Ficha técnica</h2>
+      <div class="grid4">
+        <article class="card ficha"><h3>Clima</h3><p>Templado y sin heladas. Entre 15 y 25 °C.</p></article>
+        <article class="card ficha"><h3>Suelo</h3><p>Franco y bien drenado. No tolera encharcamiento.</p></article>
+        <article class="card ficha"><h3>Agua</h3><p>Riego tecnificado por goteo. Cultivo exigente.</p></article>
+        <article class="card ficha"><h3>Ciclo</h3><p>Da fruto desde el 3.er año y llega a su plenitud al 7.º.</p></article>
+      </div>
+    </section>
+    <section>
+      <h2>Estacionalidad de la cosecha</h2>
+      <div class="grid">
+        <article class="card"><h3>Porcentaje de la cosecha por mes</h3><canvas id="c5"></canvas></article>
+        <article class="card"><h3>Lectura rápida</h3><p>La cosecha se concentra entre <strong>mayo y agosto</strong> (62 % del total). Fuera de esa ventana el Perú compite con menos volumen, por eso planificar la cosecha, el empaque y los embarques es clave. El resto del año la oferta es menor y los volúmenes se reparten entre más destinos.</p></article>
+      </div>
+    </section>
+  </main>
+  <footer><p>Estudio con datos <strong>simulados</strong> con fines didácticos · Ana y Luis · Taller “De cero a tu primera página web”</p></footer>
+  <script src="js/chart.umd.js"></script>
+  <script src="script.js"></script>
+</body>
+</html>

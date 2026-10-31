@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Rendimiento por región · Palta Hass</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header>
+    <nav>
+      <strong>PALTA HASS · PERÚ</strong>
+      <div>
+        <a href="index.html">Presentación</a>
+        <a href="cultivo.html">El cultivo</a>
+        <a href="regiones.html" class="activo">Rendimiento por región</a>
+        <a href="exportaciones.html">Exportaciones</a>
+        <a href="riesgos.html" class="cta">Riesgos</a>
+      </div>
+    </nav>
+    <div class="hero">
+      <h1><span>Rendimiento</span> por región</h1>
+      <p>¿Dónde se produce más y dónde se produce mejor?</p>
+    </div>
+  </header>
+  <main>
+    <section>
+      <h2>Producción y rendimiento</h2>
+      <div class="grid">
+        <article class="card"><h3>Producción 2025 por región</h3><canvas id="c3"></canvas></article>
+        <article class="card"><h3>Rendimiento por región</h3><canvas id="c4"></canvas></article>
+      </div>
+    </section>
+    <section>
+      <h2>Detalle por región</h2>
+      <div class="tabla"><table><thead><tr><th>Región</th><th>Hectáreas</th><th>Producción (miles t)</th><th>Rendimiento (t/ha)</th></tr></thead><tbody><tr><td>La Libertad</td><td>23 062</td><td>334</td><td>14.5</td></tr><tr><td>Ica</td><td>15 400</td><td>185</td><td>12.0</td></tr><tr><td>Lima</td><td>13 600</td><td>150</td><td>11.0</td></tr><tr><td>Junín</td><td>12 424</td><td>106</td><td>8.5</td></tr><tr><td>Áncash</td><td>11 733</td><td>106</td><td>9.0</td></tr></tbody></table></div>
+    </section>
+    <section>
+      <h2>Lectura</h2>
+      <p class="centro"><strong>La Libertad</strong> lidera en volumen y en rendimiento. <strong>Junín</strong> produce menos por hectárea: ahí hay mayor margen de mejora.</p>
+    </section>
+  </main>
+  <footer><p>Estudio con datos <strong>simulados</strong> con fines didácticos · Ana y Luis · Taller “De cero a tu primera página web”</p></footer>
+  <script src="js/chart.umd.js"></script>
+  <script src="script.js"></script>
+</body>
+</html>

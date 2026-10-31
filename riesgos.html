@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Riesgos del cultivo · Palta Hass</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header>
+    <nav>
+      <strong>PALTA HASS · PERÚ</strong>
+      <div>
+        <a href="index.html">Presentación</a>
+        <a href="cultivo.html">El cultivo</a>
+        <a href="regiones.html">Rendimiento por región</a>
+        <a href="exportaciones.html">Exportaciones</a>
+        <a href="riesgos.html" class="activo cta">Riesgos</a>
+      </div>
+    </nav>
+    <div class="hero riesgos">
+      <h1><span>Riesgos</span> del cultivo</h1>
+      <p>Clima, plagas, agua y precio</p>
+    </div>
+  </header>
+  <main>
+    <section>
+      <h2>Variación anual de la producción</h2>
+      <p class="centro">La producción de palta depende del clima, el agua y los mercados. Observar cómo cambió año a año ayuda a identificar los momentos de mayor vulnerabilidad.</p>
+      <div class="grid">
+        <article class="card"><h3>Variación % respecto al año anterior</h3><canvas id="c6"></canvas></article>
+        <article class="card"><h3>Lectura rápida</h3><p>Las caídas (en rojo) coinciden con años de <strong>El Niño costero</strong> y sequía: 2017 y 2023. Aun así, la tendencia general es de crecimiento.</p></article>
+      </div>
+    </section>
+    <section>
+      <h2>Matriz de riesgos</h2>
+      <div class="tabla"><table><thead><tr><th>Riesgo</th><th>Probabilidad</th><th>Impacto</th><th>Medida de mitigación</th></tr></thead><tbody><tr><td>Clima (El Niño, sequía)</td><td>Media</td><td>Alto</td><td>Seguros agrarios y diversificar zonas</td></tr><tr><td>Plagas y enfermedades</td><td>Alta</td><td>Medio</td><td>Monitoreo y manejo integrado</td></tr><tr><td>Escasez de agua</td><td>Media</td><td>Alto</td><td>Riego tecnificado y reservorios</td></tr><tr><td>Precio internacional</td><td>Alta</td><td>Medio</td><td>Contratos y varios destinos</td></tr><tr><td>Logística y puertos</td><td>Baja</td><td>Medio</td><td>Planificar embarques con anticipación</td></tr></tbody></table></div>
+    </section>
+    <section>
+      <h2>Conclusiones y recomendaciones</h2>
+      <ul class="objetivos">
+        <li>La producción y las exportaciones crecen de forma sostenida, con caídas puntuales en años de eventos climáticos.</li>
+        <li>El riesgo más sensible es el agua: invertir en riego tecnificado y reservorios protege el rendimiento.</li>
+        <li>Diversificar destinos y regiones reduce la exposición a un solo mercado o a un solo clima.</li>
+      </ul>
+    </section>
+  </main>
+  <footer><p>Estudio con datos <strong>simulados</strong> con fines didácticos · Ana y Luis · Taller “De cero a tu primera página web”</p></footer>
+  <script src="js/chart.umd.js"></script>
+  <script src="script.js"></script>
+</body>
+</html>
