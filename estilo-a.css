@@ -1,0 +1,66 @@
+
+/* ---------- PERFIL A RETO 1: portada azul ----------
+   Ojo: la portada de regiones usa solo .hero, pero la de cultivo usa
+   .hero.cultivo (más específica). Por eso hay dos reglas.
+   Usamos background-image (no background) y repetimos url(...)
+   para conservar la foto; el tamaño y la posición vienen de styles.css. */
+.hero {
+  background-image:
+    linear-gradient(110deg, rgba(8, 40, 66, .92), rgba(10, 150, 200, .60)),
+    url("img/portada.jpg");
+}
+.hero.cultivo {
+  background-image:
+    linear-gradient(110deg, rgba(8, 40, 66, .88), rgba(10, 150, 200, .45)),
+    url("img/palta-arbol.jpg");
+}
+
+
+/* ---------- RETO 2: raya bajo los títulos ---------- */
+h2::after {
+  background: #FDB913;
+}
+
+
+/* ---------- RETO 3: tarjetas más redondas ---------- */
+.card {
+  border-radius: 24px;
+  box-shadow: 0 8px 24px rgba(0, 0, 0, .18);
+}
+
+/* Las 4 fichas de cultivo.html: cambiamos el color de la raya de arriba.
+   Usamos los mismos selectores que styles.css; como van después, ganan. */
+.ficha                { border-color: #0A96C8; }
+.ficha:nth-child(2)   { border-color: #FDB913; }
+.ficha:nth-child(3)   { border-color: #0B3D5C; }
+.ficha:nth-child(4)   { border-color: #3F9A2E; }
+
+
+/* ---------- RETO 4: color del menú ---------- */
+nav a:hover,
+nav a.activo {
+  color: #3DB5E6;
+}
+
+/* El botón diagonal del menú también cambia de color */
+nav a.cta         { background: #0A96C8; color: #fff; }
+nav a.cta:hover   { background: #fff;    color: #000; }
+nav a.cta.activo  { background: #fff;    color: #000; }
+
+
+/* ---------- RETO 5: otra tipografía ---------- */
+body {
+  font-family: Georgia, 'Times New Roman', serif;
+  line-height: 1.7;
+}
+
+
+/* ---------- EXTRA: tablas (regiones.html) ---------- */
+th {
+  background: #0B3D5C;
+}
+tbody tr:nth-child(even) {
+  background: #EAF4FA;
+}
+
+
